@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>PRAVAN - Programmation Web</title>
+</head>
+
+<body>
+
+	<nav class="menu">
+		<a href="#accueil" class="logo"><i class="fas fa-laptop-code"></i> PRAVAN</a>
+		<ul>
+			<li><a href="#ch1">1. Intro</a></li>
+			<li><a href="#ch2">2. HTML</a></li>
+			<li><a href="#ch3">3. CSS</a></li>
+			<li><a href="#ch4">4. JavaScript</a></li>
+			<li><a href="#ch5">5. HTTP</a></li>
+			<li><a href="#ch6">6. Dynamique</a></li>
+			<li><a href="#ch7">7. Données</a></li>
+			<li><a href="#ch8">8. SPA</a></li>
+		</ul>
+	</nav>
+
+	<header id="accueil" class="hero">
+		<div class="hero-texte">
+			<p class="petit-titre">Module PRAVAN</p>
+			<h1>Programmation <span>Web</span></h1>
+			<p>
+				Huit chapitres pour comprendre comment fonctionne un site web :
+				de la première balise HTML jusqu'aux applications qui parlent à un serveur.
+			</p>
+			<a href="#ch1" class="bouton">Commencer le cours <i class="fas fa-arrow-down"></i></a>
+		</div>
+		<div class="hero-image">
+			<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=70" alt="Code affiché sur un écran d'ordinateur">
+		</div>
+	</header>
+
+	<section class="parcours">
+		<div><strong>8</strong> chapitres</div>
+		<div><strong>3</strong> langages côté client</div>
+		<div><strong>1</strong> serveur Flask</div>
+		<div><strong>1</strong> base de données</div>
+	</section>
+
+	<main>
+
+		<section id="ch1" class="chapitre">
+			<div class="photo">
+				<img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=70" alt="Réseau mondial représenté par des lumières sur la Terre">
+			</div>
+			<div class="texte">
+				<span class="numero">01</span>
+				<h2>Introduction au Web</h2>
+				<p>
+					Quand tu tapes une adresse dans ton navigateur, une conversation commence entre ton ordinateur
+					(le <strong>client</strong>) et une machine distante (le <strong>serveur</strong>).
+					Ce chapitre explique comment le Web est né et comment cet échange se déroule.
+				</p>
+				<ul>
+					<li>Le modèle client / serveur</li>
+					<li>Sites statiques et sites dynamiques</li>
+					<li>Les trois outils de base : HTML, CSS, JavaScript</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="ch2" class="chapitre">
+			<div class="photo logo-bg orange">
+				<img class="logo-techno" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Logo HTML5">
+			</div>
+			<div class="texte">
+				<span class="numero">02</span>
+				<h2>HTML : la structure</h2>
+				<p>
+					HTML décrit le contenu d'une page : titres, paragraphes, images, liens, listes, tableaux.
+					C'est le squelette sur lequel on ajoute ensuite le style et le comportement.
+				</p>
+				<pre>&lt;h1&gt;Mon premier titre&lt;/h1&gt;
+&lt;p&gt;Bonjour le monde !&lt;/p&gt;</pre>
+			</div>
+		</section>
+
+		<section id="ch3" class="chapitre">
+			<div class="photo logo-bg bleu">
+				<img class="logo-techno" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Logo CSS3">
+			</div>
+			<div class="texte">
+				<span class="numero">03</span>
+				<h2>CSS : le style</h2>
+				<p>
+					CSS s'occupe de l'apparence : couleurs, polices, marges, positions.
+					On y découvre aussi Flexbox et Grid pour organiser une page, et le design adaptatif
+					pour qu'elle reste lisible sur téléphone.
+				</p>
+				<pre>h1 {
+  color: tomato;
+  text-align: center;
+}</pre>
+			</div>
+		</section>
+
+		<section id="ch4" class="chapitre">
+			<div class="photo logo-bg jaune">
+				<img class="logo-techno" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Logo JavaScript">
+			</div>
+			<div class="texte">
+				<span class="numero">04</span>
+				<h2>JavaScript : l'interactivité</h2>
+				<p>
+					Avec JavaScript, la page réagit : un clic sur un bouton, un calcul, un élément qui change de couleur.
+					On apprend les variables, les fonctions, les tableaux, les objets, puis la manipulation du DOM et les événements.
+				</p>
+				<pre>function direBonjour() {
+  console.log("Bonjour !");
+}</pre>
+			</div>
+		</section>
+
+		<section id="ch5" class="chapitre">
+			<div class="photo">
+				<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=70" alt="Circuit électronique en gros plan">
+			</div>
+			<div class="texte">
+				<span class="numero">05</span>
+				<h2>HTTP et formulaires</h2>
+				<p>
+					HTTP est le langage que parlent le navigateur et le serveur : une <strong>requête</strong> part,
+					une <strong>réponse</strong> revient. Les formulaires permettent d'envoyer des données
+					saisies par l'utilisateur, avec les méthodes GET et POST.
+				</p>
+				<ul>
+					<li>Requêtes et réponses HTTP</li>
+					<li>Les codes de statut (200, 404, 500...)</li>
+					<li>Envoyer un formulaire avec GET ou POST</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="ch6" class="chapitre">
+			<div class="photo logo-bg vert">
+				<img class="logo-techno" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Logo Python">
+			</div>
+			<div class="texte">
+				<span class="numero">06</span>
+				<h2>Sites dynamiques</h2>
+				<p>
+					Un site dynamique fabrique ses pages à la demande. Avec Python et le framework Flask,
+					on crée des routes, on reçoit les requêtes du navigateur et on renvoie une page
+					différente selon l'utilisateur.
+				</p>
+				<pre>@app.route("/")
+def accueil():
+    return "Bienvenue !"</pre>
+			</div>
+		</section>
+
+		<section id="ch7" class="chapitre">
+			<div class="photo">
+				<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=70" alt="Baies de serveurs dans un centre de données">
+			</div>
+			<div class="texte">
+				<span class="numero">07</span>
+				<h2>Bases de données</h2>
+				<p>
+					Pour garder les informations (comptes, articles, notes), le serveur s'appuie sur une base de données.
+					On apprend à créer des tables MySQL et à les interroger depuis l'application.
+				</p>
+				<pre>SELECT nom, prenom
+FROM etudiants;</pre>
+			</div>
+		</section>
+
+		<section id="ch8" class="chapitre">
+			<div class="photo">
+				<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=70" alt="Ordinateur portable affichant des graphiques">
+			</div>
+			<div class="texte">
+				<span class="numero">08</span>
+				<h2>SPA et services web</h2>
+				<p>
+					Une application à page unique (SPA) change son contenu sans recharger la page.
+					Grâce à AJAX, JavaScript échange des données au format JSON avec le serveur
+					et met l'affichage à jour en direct.
+				</p>
+				<ul>
+					<li>AJAX et la fonction fetch</li>
+					<li>Le format JSON</li>
+					<li>Créer et consommer un service web</li>
+				</ul>
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="pied">
+			<div>
+				<h3>PRAVAN</h3>
+				<p>Programmation Web</p>
+			</div>
+			<ul>
+				<li><a href="#ch1">1. Introduction</a></li>
+				<li><a href="#ch2">2. HTML</a></li>
+				<li><a href="#ch3">3. CSS</a></li>
+				<li><a href="#ch4">4. JavaScript</a></li>
+			</ul>
+			<ul>
+				<li><a href="#ch5">5. HTTP et formulaires</a></li>
+				<li><a href="#ch6">6. Sites dynamiques</a></li>
+				<li><a href="#ch7">7. Bases de données</a></li>
+				<li><a href="#ch8">8. SPA et services web</a></li>
+			</ul>
+		</div>
+		<p class="copyright">Page réalisée dans le cadre du module PRAVAN &copy; 2026 &middot; <a href="#accueil">Retour en haut <i class="fas fa-arrow-up"></i></a></p>
+	</footer>
+
+</body>
+</html>
